@@ -4,18 +4,17 @@
     height: 47px;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 6;
 }
 
 .slides-navigation a.prev {
     left:20px;
     background-image: url(../assets/Icons/left.png);
-    z-index: 6;
 }
 
 .slides-navigation a.next {
     right:20px;
     background-image: url(../assets/Icons/right.png);
-    z-index: 6;
 }
 
 .titleMessage {
