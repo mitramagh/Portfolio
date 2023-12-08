@@ -1,10 +1,17 @@
+body {
+	font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+
 .slides-navigation .prev, 
 .slides-navigation .next {
     width: 47px;
     height: 47px;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 6;
+    z-index: 10;
 }
 
 .slides-navigation a.prev {
@@ -40,4 +47,127 @@
 
 .titleMessage .heading .sub {
     font-size: 15px;
+}
+
+.section {
+    padding: 100px 0;
+    /* background-color:rgb(214, 199, 174); */
+    background-color:rgb(45, 39, 39);
+    color: #fff;
+
+}
+
+.aboutImage {
+    width: 100%;
+}
+
+.skillSection {
+    background-color:rgb(193, 163, 163);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.skill {
+    text-align: center;
+}
+
+.chart {
+    position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    /* margin-left: 25px; */
+    text-align: center;
+}
+
+
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.chart .percent {
+    display: inline-block;
+    line-height: 152px;
+    z-index: 2;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.chart .percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em;
+}
+
+.squareItem {
+	margin-top: 30px;
+    position: relative;
+}
+
+.squareInnerContainer {
+	position: relative;
+	padding: 50px 15px 35px;
+	text-align: center;
+	border: 2px solid #444;
+	border-top: none;
+}
+
+.squareInnerContainer:before,
+.squareInnerContainer:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	width: 30%;
+	border-bottom: 2px solid #444;
+}
+
+
+.squareInnerContainer:before {
+	right: 0px;
+}
+
+.squareInnerContainer:after {
+	left: 0px
+}
+
+
+.squareContent h2 {
+	font-size: 56px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	color: #e74c3c;
+}
+
+.squareContent h3 {
+	font-size: 13px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.squareIcon {
+	position: absolute;
+    left: 50%;
+    top: -30px;
+    width: 40%;
+    height: 60px;
+    font-size: 45px;
+    margin-left: -20%;
+    color: #444;
+}
+
+.contactButton {
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.contactButton:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
 }
