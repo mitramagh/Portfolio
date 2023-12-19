@@ -227,7 +227,8 @@ body {
     display: inline-block;
     background: white; /* card background color */
     margin: 10px;
-    width: 300px; /* or any width you prefer */
+    width: 300px; 
+    height: 700px; /* adjust as needed */
     border-radius: 8px; /* rounded corners for the card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
     overflow: hidden; /* ensures the content fits within the rounded corners */
@@ -251,28 +252,26 @@ body {
 
 .project-card p {
     height: 150px;
+    color: #bcbaba;
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 50px;
 }
 
-  .technologies-used {
-    margin: 15px 0;
-    padding: 0 10px; /* spacing on the sides */
-    height: fit-content;
-  }
-  
-  .technologies-used span {
-    display: inline-block;
-    background: #e0e0e0; /* technology chip background */
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 4px; /* rounded corners for the technology chips */
-    font-size: 0.8em; /* smaller font size for the chips */
-  }
-  
+.project-links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
   .project-links a {
     text-decoration: none;
     color:#64ffda; /* link color */
     margin: 5px;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border: 1px solid #64ffda; /* border to look like buttons */
     border-radius: 4px; /* rounded corners for the links/buttons */
     display: inline-block; /* to enable margin and padding */
@@ -319,6 +318,19 @@ body {
     color: white;
   }
 
+  .project-card2 {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    position: relative;
+    box-sizing: border-box;
+    flex: 1;
+    min-width: 300px;
+    color: white;
+  }
+
 
   .project-title {
     font-size: 24px;
@@ -330,6 +342,12 @@ body {
   }
   .technologies {
     font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .technologies span {
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 16px;
   }
 
   .github-link {
@@ -517,4 +535,10 @@ margin: 0 100px;
 }
 .logoColor {
     color: #64ffda;
+}
+
+.aboutMe {
+    padding-top: 30px;
+    font-size: 18px;
+ 
 }
